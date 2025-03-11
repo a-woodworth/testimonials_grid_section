@@ -12,6 +12,18 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
 
     <title>Frontend Mentor | [Challenge Name Here]</title>
   </head>
@@ -23,21 +35,25 @@
       </h1>
       <section aria-labelledby="testimonials" class="wrapper">
         <h2 id="testimonials" class="sr-only">Testimonials</h2>
-        <article class="card">
+        <article class="card quote-1">
           <div class="card__heading">
-            <img
-              src="images/image-daniel.jpg"
-              alt="Daniel Clifford avatar"
-            />
             <h3 class="card__title">
-              Daniel Clifford
-              <span>Verified Graduate</span>
-            </h3>
-            <h4 class="card__subtitle">
               I received a job offer mid-course, and the subjects I
               learned were current, if not more so, in the company I
               joined. I honestly feel I got every penny’s worth.
-            </h4>
+            </h3>
+            <div class="card-heading-wrapper">
+              <img
+                src="images/image-daniel.jpg"
+                alt="Daniel Clifford avatar"
+                width="28"
+                height="28"
+              />
+              <hgroup>
+                <h4 class="card__author">Daniel Clifford</h4>
+                <p class="card__subtitle">Verified Graduate</p>
+              </hgroup>
+            </div>
           </div>
           <div class="card__body">
             <blockquote class="card__quote">
@@ -55,19 +71,23 @@
             </blockquote>
           </div>
         </article>
-        <article class="card">
+        <article class="card quote-2">
           <div class="card__heading">
-            <img
-              src="images/image-jonathan.jpg"
-              alt="Jonathan Walters avatar"
-            />
             <h3 class="card__title">
-              Jonathan Walters
-              <span>Verified Graduate</span>
-            </h3>
-            <h4 class="card__subtitle">
               The team was very supportive and kept me motivated
-            </h4>
+            </h3>
+            <div class="card-heading-wrapper">
+              <img
+                src="images/image-jonathan.jpg"
+                alt="Jonathan Walters avatar"
+                width="28"
+                height="28"
+              />
+              <hgroup>
+                <h4 class="card__author">Jonathan Walters</h4>
+                <p class="card__subtitle">Verified Graduate</p>
+              </hgroup>
+            </div>
           </div>
           <div class="card__body">
             <blockquote class="card__quote">
@@ -80,19 +100,23 @@
             </blockquote>
           </div>
         </article>
-        <article class="card">
+        <article class="card quote-3">
           <div class="card__heading">
-            <img
-              src="images/image-jeanette.jpg"
-              alt="Jeanette Harmon avatar"
-            />
             <h3 class="card__title">
-              Jeanette Harmon
-              <span>Verified Graduate</span>
-            </h3>
-            <h4 class="card__subtitle">
               An overall wonderful and rewarding experience
-            </h4>
+            </h3>
+            <div class="card-heading-wrapper">
+              <img
+                src="images/image-jeanette.jpg"
+                alt="Jeanette Harmon avatar"
+                width="28"
+                height="28"
+              />
+              <hgroup>
+                <h4 class="card__author">Jeanette Harmon</h4>
+                <p class="card__subtitle">Verified Graduate</p>
+              </hgroup>
+            </div>
           </div>
           <div class="card__body">
             <blockquote class="card__quote">
@@ -104,21 +128,25 @@
             </blockquote>
           </div>
         </article>
-        <article class="card">
+        <article class="card quote-4">
           <div class="card__heading">
-            <img
-              src="images/image-patrick.jpg"
-              alt="Patrick Abrams avatar"
-            />
             <h3 class="card__title">
-              Patrick Abrams
-              <span>Verified Graduate</span>
-            </h3>
-            <h4 class="card__subtitle">
               Awesome teaching support from TAs who did the bootcamp
               themselves. Getting guidance from them and learning from
               their experiences was easy.
-            </h4>
+            </h3>
+            <div class="card-heading-wrapper">
+              <img
+                src="images/image-patrick.jpg"
+                alt="Patrick Abrams avatar"
+                width="28"
+                height="28"
+              />
+              <hgroup>
+                <h4 class="card__author">Patrick Abrams</h4>
+                <p class="card__subtitle">Verified Graduate</p>
+              </hgroup>
+            </div>
           </div>
           <div class="card__body">
             <blockquote class="card__quote">
@@ -134,19 +162,23 @@
             </blockquote>
           </div>
         </article>
-        <article class="card">
+        <article class="card quote-5">
           <div class="card__heading">
-            <img
-              src="images/image-kira.jpg"
-              alt="Kira Whittle avatar"
-            />
             <h3 class="card__title">
-              Kira Whittle
-              <span>Verified Graduate</span>
-            </h3>
-            <h4 class="card__subtitle">
               Such a life-changing experience. Highly recommended!
-            </h4>
+            </h3>
+            <div class="card-heading-wrapper">
+              <img
+                src="images/image-kira.jpg"
+                alt="Kira Whittle avatar"
+                width="28"
+                height="28"
+              />
+              <hgroup>
+                <h4 class="card__author">Kira Whittle</h4>
+                <p class="card__subtitle">Verified Graduate</p>
+              </hgroup>
+            </div>
           </div>
           <div class="card__body">
             <blockquote class="card__quote">
@@ -173,7 +205,7 @@
       </section>
     </main>
     <footer>
-      <div class="main-footer wrapper">
+      <div class="main-footer">
         <p>
           Challenge by
           <a
