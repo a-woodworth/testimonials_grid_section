@@ -147,7 +147,7 @@ a:focus {
 .quote-1 .card__body p {
   color: var(--purple-50);
 }
-@media (min-width: 48rem) {
+@media (min-width: 40.5rem) {
   .quote-1 {
     background-image: url("images/bg-pattern-quotation.svg");
     background-position: top 0 right 6.5rem;
@@ -155,7 +155,7 @@ a:focus {
     grid-column: span 2;
   }
 }
-@media (min-width: 90rem) {
+@media (min-width: 75rem) {
   .quote-1 {
     background-position: top 0 right 4.5rem;
   }
@@ -199,18 +199,18 @@ a:focus {
 .quote-4 .card__body p {
   color: var(--grey-100);
 }
-@media (min-width: 768px) {
+@media (min-width: 40.5rem) {
   .quote-4 {
     grid-column: span 2;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 40.5rem) {
   .quote-5 {
     grid-column: span 2;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 75rem) {
   .quote-5 {
     grid-column: 4;
     grid-row: 1/span 2;
@@ -227,14 +227,14 @@ a:focus {
   padding-block: var(--spacing-400);
   row-gap: var(--spacing-400);
 }
-@media (min-width: 48rem) {
+@media (min-width: 40.5rem) {
   .wrapper {
     max-width: 40.5rem;
     grid-template-columns: 1fr 1fr;
     column-gap: var(--spacing-400);
   }
 }
-@media (min-width: 90rem) {
+@media (min-width: 75rem) {
   .wrapper {
     grid-template-columns: repeat(4, 1fr);
     max-width: 75rem;

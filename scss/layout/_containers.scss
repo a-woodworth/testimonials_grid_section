@@ -8,13 +8,13 @@
   padding-block: var(--spacing-400);
   row-gap: var(--spacing-400);
 
-  @media (min-width: 48rem) {
+  @media (min-width: 40.5rem) {
     max-width: 40.5rem;
     grid-template-columns: 1fr 1fr;
     column-gap: var(--spacing-400);
   }
 
-  @media (min-width: 90rem) {
+  @media (min-width: 75rem) {
     grid-template-columns: repeat(4, 1fr);
     max-width: 75rem;
   }
