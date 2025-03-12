@@ -3,19 +3,22 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   margin: auto auto;
-  max-width: 25rem;
+  max-width: 23rem;
   padding-inline: var(--spacing-400);
   padding-block: var(--spacing-400);
   row-gap: var(--spacing-400);
 
   @media (min-width: 40.5rem) {
-    max-width: 40.5rem;
     grid-template-columns: 1fr 1fr;
     column-gap: var(--spacing-400);
+    max-width: 40.5rem;
+    padding-inline: 0;
   }
 
   @media (min-width: 75rem) {
     grid-template-columns: repeat(4, 1fr);
     max-width: 75rem;
+    padding-inline-start: var(--spacing-400);
+    padding-inline-end: calc(var(--spacing-400) + 8px);
   }
 }

@@ -150,14 +150,17 @@ a:focus {
 @media (min-width: 40.5rem) {
   .quote-1 {
     background-image: url("images/bg-pattern-quotation.svg");
-    background-position: top 0 right 6.5rem;
+    background-position: top 0 right 10.5rem;
     background-repeat: no-repeat;
     grid-column: span 2;
+  }
+  .quote-1 .card__body p {
+    padding-inline-end: 3px;
   }
 }
 @media (min-width: 75rem) {
   .quote-1 {
-    background-position: top 0 right 4.5rem;
+    background-position: top 0 right 4.25rem;
   }
 }
 
@@ -222,22 +225,25 @@ a:focus {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   margin: auto auto;
-  max-width: 25rem;
+  max-width: 23rem;
   padding-inline: var(--spacing-400);
   padding-block: var(--spacing-400);
   row-gap: var(--spacing-400);
 }
 @media (min-width: 40.5rem) {
   .wrapper {
-    max-width: 40.5rem;
     grid-template-columns: 1fr 1fr;
     column-gap: var(--spacing-400);
+    max-width: 40.5rem;
+    padding-inline: 0;
   }
 }
 @media (min-width: 75rem) {
   .wrapper {
     grid-template-columns: repeat(4, 1fr);
     max-width: 75rem;
+    padding-inline-start: var(--spacing-400);
+    padding-inline-end: calc(var(--spacing-400) + 8px);
   }
 }
 

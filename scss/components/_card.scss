@@ -60,13 +60,17 @@
 
   @media (min-width: 40.5rem) {
     background-image: url('images/bg-pattern-quotation.svg');
-    background-position: top 0 right 6.5rem;
+    background-position: top 0 right 10.5rem;
     background-repeat: no-repeat;
     grid-column: span 2;
+
+    .card__body p {
+      padding-inline-end: 3px;
+    }
   }
 
   @media (min-width: 75rem) {
-    background-position: top 0 right 4.5rem;
+    background-position: top 0 right 4.25rem;
   }
 }
 
