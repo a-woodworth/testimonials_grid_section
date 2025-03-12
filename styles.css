@@ -59,11 +59,27 @@ body {
   background-color: var(--bkgd-color);
   display: flex;
   flex-direction: column;
+  font-family: var(--font-base);
   justify-content: center;
   align-items: center;
   margin: auto;
   line-height: var(--leading-standard);
   min-height: 100vh;
+}
+
+a {
+  text-decoration: underline;
+  color: currentColor;
+}
+
+a:hover {
+  color: var(--purple-500);
+  text-decoration: none;
+}
+
+a:focus {
+  outline: 1px dotted currentColor;
+  outline-offset: 2px;
 }
 
 /* Screen reader styles */
@@ -131,9 +147,17 @@ body {
 .quote-1 .card__body p {
   color: var(--purple-50);
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .quote-1 {
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-position: top 0 right 6.5rem;
+    background-repeat: no-repeat;
     grid-column: span 2;
+  }
+}
+@media (min-width: 90rem) {
+  .quote-1 {
+    background-position: top 0 right 4.5rem;
   }
 }
 
@@ -169,6 +193,12 @@ body {
 .quote-4 img {
   border: var(--stroke-width) solid var(--purple-500);
 }
+.quote-4 .card__title {
+  color: var(--grey-200);
+}
+.quote-4 .card__body p {
+  color: var(--grey-100);
+}
 @media (min-width: 768px) {
   .quote-4 {
     grid-column: span 2;
@@ -192,18 +222,19 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   margin: auto auto;
+  max-width: 25rem;
   padding-inline: var(--spacing-400);
   padding-block: var(--spacing-400);
   row-gap: var(--spacing-400);
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .wrapper {
-    max-width: 50rem;
+    max-width: 40.5rem;
     grid-template-columns: 1fr 1fr;
     column-gap: var(--spacing-400);
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 90rem) {
   .wrapper {
     grid-template-columns: repeat(4, 1fr);
     max-width: 75rem;
@@ -211,5 +242,7 @@ body {
 }
 
 .main-footer p {
+  color: var(--grey-500);
+  font: var(--text-preset-2);
   text-align: center;
 }

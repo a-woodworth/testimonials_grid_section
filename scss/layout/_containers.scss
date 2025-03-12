@@ -3,17 +3,18 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   margin: auto auto;
+  max-width: 25rem;
   padding-inline: var(--spacing-400);
   padding-block: var(--spacing-400);
   row-gap: var(--spacing-400);
 
-  @media (min-width: 768px) {
-    max-width: 50rem;
+  @media (min-width: 48rem) {
+    max-width: 40.5rem;
     grid-template-columns: 1fr 1fr;
     column-gap: var(--spacing-400);
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 90rem) {
     grid-template-columns: repeat(4, 1fr);
     max-width: 75rem;
   }

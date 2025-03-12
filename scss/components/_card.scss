@@ -58,8 +58,15 @@
     color: var(--purple-50);
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 48rem) {
+    background-image: url('images/bg-pattern-quotation.svg');
+    background-position: top 0 right 6.5rem;
+    background-repeat: no-repeat;
     grid-column: span 2;
+  }
+
+  @media (min-width: 90rem) {
+    background-position: top 0 right 4.5rem;
   }
 }
 
@@ -96,6 +103,14 @@
 
   img {
     border: var(--stroke-width) solid var(--purple-500);
+  }
+
+  .card__title {
+    color: var(--grey-200);
+  }
+
+  .card__body p {
+    color: var(--grey-100);
   }
 
   @media (min-width: 768px) {

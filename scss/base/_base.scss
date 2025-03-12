@@ -70,11 +70,27 @@ body {
   background-color: var(--bkgd-color);
   display: flex;
   flex-direction: column;
+  font-family: var(--font-base);
   justify-content: center;
   align-items: center;
   margin: auto;
   line-height: var(--leading-standard);
   min-height: 100vh;
+}
+
+a {
+  text-decoration: underline;
+  color: currentColor;
+}
+
+a:hover {
+  color: var(--purple-500);
+  text-decoration: none;
+}
+
+a:focus {
+  outline: 1px dotted currentColor;
+  outline-offset: 2px;
 }
 
 /* Screen reader styles */
