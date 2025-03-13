@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/testimonials-grid-section-rh1W9RTH1V)
 - Live Site URL: [Live Site](https://a-woodworth.github.io/testimonials_grid_section)
 
 ### Built with
